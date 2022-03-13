@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:provider/provider.dart';
 import 'package:talkr_demo/Services/AuthMethods.dart';
-import 'package:talkr_demo/Services/user.dart';
+import 'package:talkr_demo/Services/user2.dart';
 import 'package:flutter/material.dart';
 
 

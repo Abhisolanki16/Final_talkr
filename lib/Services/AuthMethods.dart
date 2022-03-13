@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:talkr_demo/Services/StorageMethods.dart';
-import 'user.dart' as model;
+import 'user2.dart' as model;
 
 class AuthMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;

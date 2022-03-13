@@ -1,3 +1,5 @@
+import 'package:talkr_demo/Final/chat.dart';
+
 import 'DatabaseManager.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +40,7 @@ class _UserListState extends State<UserList> {
       ),
       body: Container(
         margin: EdgeInsets.symmetric(vertical: 10),
-        color: Colors.white,
+        //color: Colors.white,
         child: ListView.builder(
             itemCount: userProfileList.length,
             itemBuilder: (context, index) {
@@ -46,6 +48,9 @@ class _UserListState extends State<UserList> {
                 children: [
                   Card(
                     child: ListTile(
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => FinalChatPage(),));
+                      },
                       title: Text('${userProfileList[index]['name']}'),
                       subtitle: Text('${userProfileList[index]['email']}'),
                       leading: CircleAvatar(

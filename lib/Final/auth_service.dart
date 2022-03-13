@@ -3,9 +3,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'db_service.dart';
-import 'users.dart';
+import 'CUsers.dart';
 import 'package:talkr_demo/Final/db_service.dart';
-import 'package:talkr_demo/Final/users.dart';
+import 'package:talkr_demo/Final/CUsers.dart';
 
 class AuthService{
   

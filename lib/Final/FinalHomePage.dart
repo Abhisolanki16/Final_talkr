@@ -2,9 +2,10 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:talkr_demo/Final/auth_service.dart';
 import 'package:talkr_demo/Final/chat.dart';
 import 'package:talkr_demo/Final/db_service.dart';
-import 'package:talkr_demo/Final/users.dart';
+import 'package:talkr_demo/Final/CUsers.dart';
 
 class FinalHomePage extends StatelessWidget {
   const FinalHomePage({ Key? key }) : super(key: key);
@@ -13,13 +14,13 @@ class FinalHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Chat"),
+        title: Text("${AuthService().user.displayName}"),
       ),
       body: StreamBuilder<List<cUser>>(
         stream: DBService().getDiscussionUser,
-        builder: (_,s){
-        if(s.hasData){
-          final users = s.data;
+        builder: (context,snapshot){
+        if(snapshot.hasData){
+          final users = snapshot.data;
           return users!.length == 0 
             ? Center(child: Text('No user'),)
             : ListView.builder(

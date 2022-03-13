@@ -6,7 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import 'package:talkr_demo/Services/AuthMethods.dart';
 import 'package:talkr_demo/Services/FirestoreMethods.dart';
-import 'package:talkr_demo/Services/user.dart';
+import 'package:talkr_demo/Services/user2.dart';
 import 'package:talkr_demo/Services/user_provider.dart';
 import 'package:talkr_demo/Services/utils.dart';
 import 'package:talkr_demo/screens/feed_screen.dart';

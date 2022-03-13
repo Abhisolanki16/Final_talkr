@@ -5,7 +5,7 @@ import 'package:talkr_demo/Final/Message.dart';
 import 'package:talkr_demo/Final/MessageComponent.dart';
 import 'package:talkr_demo/Final/auth_service.dart';
 import 'package:talkr_demo/Final/db_service.dart';
-import 'package:talkr_demo/Final/users.dart';
+import 'package:talkr_demo/Final/CUsers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FinalChatPage extends StatelessWidget {
@@ -46,11 +46,15 @@ class FinalChatPage extends StatelessWidget {
                       itemCount: messages.length,
                       itemBuilder: (context,index){
                         final msg = messages[index];
-                        return MessageComponent(msg: msg,);
+                        return Container(
+                          margin: EdgeInsets.only(bottom: 10),
+                          child: MessageComponent(msg: msg,
+                          )
+                        );
+                      });
 
-                      } );
-
-                  }else{return Center(child: const CircularProgressIndicator());}
+                  }else{return Center(child: const CircularProgressIndicator());
+                  }
                 },
               );
 

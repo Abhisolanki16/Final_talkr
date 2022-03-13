@@ -16,4 +16,10 @@ class cUser{
     return {"uid": uid,"email": email,"username": username};
   }
 
+  cUser.fromMap(Map<String,dynamic> map){
+    uid = map['uid'];
+    username = map['username'];
+    email = map['email'];
+  }
+
 }

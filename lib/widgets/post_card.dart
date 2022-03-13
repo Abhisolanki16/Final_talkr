@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:talkr_demo/Services/user.dart';
+import 'package:talkr_demo/Services/user2.dart';
 import 'package:talkr_demo/widgets/like_animation.dart';
 
 class PostCard extends StatefulWidget {

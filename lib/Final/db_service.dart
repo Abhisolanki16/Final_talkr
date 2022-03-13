@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'Message.dart';
 import 'auth_service.dart';
-import 'users.dart';
+import 'CUsers.dart';
 
 class DBService{
   var userCollection = FirebaseFirestore.instance.collection("users");

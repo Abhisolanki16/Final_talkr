@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talkr_demo/Final/FinalHomePage.dart';
+import 'package:talkr_demo/Personal/ChatUserList.dart';
 import 'package:talkr_demo/Personal/NewChatScreen.dart';
 import 'package:talkr_demo/Personal/SearchUser.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -36,10 +37,10 @@ class _FeedScreenState extends State<FeedScreen> {
               color: Colors.deepPurpleAccent,
             ),
             onPressed: () {
-              // Navigator.of(context).push(
-              //     MaterialPageRoute(builder: (context) => FinalHomePage()));
-                  Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => SearchUser()));
+               Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => FinalHomePage()));
+                //   Navigator.of(context).push(
+                // MaterialPageRoute(builder: (context) => SearchUser()));
             },
           )
         ],
